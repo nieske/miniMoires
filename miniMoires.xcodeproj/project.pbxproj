@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDAC86AE1A5972EE00E0B8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86AD1A5972EE00E0B8CF /* AppDelegate.swift */; };
+		BDAC86B01A5972EE00E0B8CF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86AF1A5972EE00E0B8CF /* MasterViewController.swift */; };
+		BDAC86B21A5972EE00E0B8CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86B11A5972EE00E0B8CF /* DetailViewController.swift */; };
+		BDAC86B51A5972EE00E0B8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAC86B31A5972EE00E0B8CF /* Main.storyboard */; };
+		BDAC86B71A5972EE00E0B8CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC86B61A5972EE00E0B8CF /* Images.xcassets */; };
+		BDAC86BA1A5972EE00E0B8CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAC86B81A5972EE00E0B8CF /* LaunchScreen.xib */; };
+		BDAC86C61A5972EE00E0B8CF /* miniMoiresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86C51A5972EE00E0B8CF /* miniMoiresTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDAC86C01A5972EE00E0B8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAC86A01A5972EE00E0B8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAC86A71A5972EE00E0B8CF;
+			remoteInfo = miniMoires;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDAC86A81A5972EE00E0B8CF /* miniMoires.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniMoires.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAC86AC1A5972EE00E0B8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAC86AD1A5972EE00E0B8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDAC86AF1A5972EE00E0B8CF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BDAC86B11A5972EE00E0B8CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BDAC86B41A5972EE00E0B8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDAC86B61A5972EE00E0B8CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BDAC86B91A5972EE00E0B8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BDAC86BF1A5972EE00E0B8CF /* miniMoiresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniMoiresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAC86C41A5972EE00E0B8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAC86C51A5972EE00E0B8CF /* miniMoiresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniMoiresTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDAC86A51A5972EE00E0B8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC86BC1A5972EE00E0B8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDAC869F1A5972EE00E0B8CF = {
+			isa = PBXGroup;
+			children = (
+				BDAC86AA1A5972EE00E0B8CF /* miniMoires */,
+				BDAC86C21A5972EE00E0B8CF /* miniMoiresTests */,
+				BDAC86A91A5972EE00E0B8CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDAC86A91A5972EE00E0B8CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC86A81A5972EE00E0B8CF /* miniMoires.app */,
+				BDAC86BF1A5972EE00E0B8CF /* miniMoiresTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAC86AA1A5972EE00E0B8CF /* miniMoires */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC86AD1A5972EE00E0B8CF /* AppDelegate.swift */,
+				BDAC86AF1A5972EE00E0B8CF /* MasterViewController.swift */,
+				BDAC86B11A5972EE00E0B8CF /* DetailViewController.swift */,
+				BDAC86B31A5972EE00E0B8CF /* Main.storyboard */,
+				BDAC86B61A5972EE00E0B8CF /* Images.xcassets */,
+				BDAC86B81A5972EE00E0B8CF /* LaunchScreen.xib */,
+				BDAC86AB1A5972EE00E0B8CF /* Supporting Files */,
+			);
+			path = miniMoires;
+			sourceTree = "<group>";
+		};
+		BDAC86AB1A5972EE00E0B8CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC86AC1A5972EE00E0B8CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDAC86C21A5972EE00E0B8CF /* miniMoiresTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC86C51A5972EE00E0B8CF /* miniMoiresTests.swift */,
+				BDAC86C31A5972EE00E0B8CF /* Supporting Files */,
+			);
+			path = miniMoiresTests;
+			sourceTree = "<group>";
+		};
+		BDAC86C31A5972EE00E0B8CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC86C41A5972EE00E0B8CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDAC86A71A5972EE00E0B8CF /* miniMoires */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAC86C91A5972EE00E0B8CF /* Build configuration list for PBXNativeTarget "miniMoires" */;
+			buildPhases = (
+				BDAC86A41A5972EE00E0B8CF /* Sources */,
+				BDAC86A51A5972EE00E0B8CF /* Frameworks */,
+				BDAC86A61A5972EE00E0B8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = miniMoires;
+			productName = miniMoires;
+			productReference = BDAC86A81A5972EE00E0B8CF /* miniMoires.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDAC86BE1A5972EE00E0B8CF /* miniMoiresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAC86CC1A5972EE00E0B8CF /* Build configuration list for PBXNativeTarget "miniMoiresTests" */;
+			buildPhases = (
+				BDAC86BB1A5972EE00E0B8CF /* Sources */,
+				BDAC86BC1A5972EE00E0B8CF /* Frameworks */,
+				BDAC86BD1A5972EE00E0B8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAC86C11A5972EE00E0B8CF /* PBXTargetDependency */,
+			);
+			name = miniMoiresTests;
+			productName = miniMoiresTests;
+			productReference = BDAC86BF1A5972EE00E0B8CF /* miniMoiresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDAC86A01A5972EE00E0B8CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Lady Geek";
+				TargetAttributes = {
+					BDAC86A71A5972EE00E0B8CF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					BDAC86BE1A5972EE00E0B8CF = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BDAC86A71A5972EE00E0B8CF;
+					};
+				};
+			};
+			buildConfigurationList = BDAC86A31A5972EE00E0B8CF /* Build configuration list for PBXProject "miniMoires" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDAC869F1A5972EE00E0B8CF;
+			productRefGroup = BDAC86A91A5972EE00E0B8CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDAC86A71A5972EE00E0B8CF /* miniMoires */,
+				BDAC86BE1A5972EE00E0B8CF /* miniMoiresTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDAC86A61A5972EE00E0B8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAC86B51A5972EE00E0B8CF /* Main.storyboard in Resources */,
+				BDAC86BA1A5972EE00E0B8CF /* LaunchScreen.xib in Resources */,
+				BDAC86B71A5972EE00E0B8CF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC86BD1A5972EE00E0B8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDAC86A41A5972EE00E0B8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAC86B21A5972EE00E0B8CF /* DetailViewController.swift in Sources */,
+				BDAC86B01A5972EE00E0B8CF /* MasterViewController.swift in Sources */,
+				BDAC86AE1A5972EE00E0B8CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC86BB1A5972EE00E0B8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAC86C61A5972EE00E0B8CF /* miniMoiresTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDAC86C11A5972EE00E0B8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAC86A71A5972EE00E0B8CF /* miniMoires */;
+			targetProxy = BDAC86C01A5972EE00E0B8CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDAC86B31A5972EE00E0B8CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAC86B41A5972EE00E0B8CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAC86B81A5972EE00E0B8CF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAC86B91A5972EE00E0B8CF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDAC86C71A5972EE00E0B8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDAC86C81A5972EE00E0B8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDAC86CA1A5972EE00E0B8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = miniMoires/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDAC86CB1A5972EE00E0B8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = miniMoires/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDAC86CD1A5972EE00E0B8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = miniMoiresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniMoires.app/miniMoires";
+			};
+			name = Debug;
+		};
+		BDAC86CE1A5972EE00E0B8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = miniMoiresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniMoires.app/miniMoires";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDAC86A31A5972EE00E0B8CF /* Build configuration list for PBXProject "miniMoires" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAC86C71A5972EE00E0B8CF /* Debug */,
+				BDAC86C81A5972EE00E0B8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAC86C91A5972EE00E0B8CF /* Build configuration list for PBXNativeTarget "miniMoires" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAC86CA1A5972EE00E0B8CF /* Debug */,
+				BDAC86CB1A5972EE00E0B8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDAC86CC1A5972EE00E0B8CF /* Build configuration list for PBXNativeTarget "miniMoiresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAC86CD1A5972EE00E0B8CF /* Debug */,
+				BDAC86CE1A5972EE00E0B8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDAC86A01A5972EE00E0B8CF /* Project object */;
+}
