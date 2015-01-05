@@ -14,6 +14,10 @@
 		BDAC86B71A5972EE00E0B8CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC86B61A5972EE00E0B8CF /* Images.xcassets */; };
 		BDAC86BA1A5972EE00E0B8CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAC86B81A5972EE00E0B8CF /* LaunchScreen.xib */; };
 		BDAC86C61A5972EE00E0B8CF /* miniMoiresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86C51A5972EE00E0B8CF /* miniMoiresTests.swift */; };
+		BDAC86D01A59735F00E0B8CF /* Memoires.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86CF1A59735F00E0B8CF /* Memoires.swift */; };
+		BDAC86D21A59743E00E0B8CF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86D11A59743E00E0B8CF /* Entry.swift */; };
+		BDAC86D41A59747400E0B8CF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86D31A59747400E0B8CF /* Person.swift */; };
+		BDAC86D61A5974C500E0B8CF /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC86D51A5974C500E0B8CF /* Save.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		BDAC86BF1A5972EE00E0B8CF /* miniMoiresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniMoiresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAC86C41A5972EE00E0B8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDAC86C51A5972EE00E0B8CF /* miniMoiresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniMoiresTests.swift; sourceTree = "<group>"; };
+		BDAC86CF1A59735F00E0B8CF /* Memoires.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memoires.swift; sourceTree = "<group>"; };
+		BDAC86D11A59743E00E0B8CF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		BDAC86D31A59747400E0B8CF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BDAC86D51A5974C500E0B8CF /* Save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 				BDAC86B61A5972EE00E0B8CF /* Images.xcassets */,
 				BDAC86B81A5972EE00E0B8CF /* LaunchScreen.xib */,
 				BDAC86AB1A5972EE00E0B8CF /* Supporting Files */,
+				BDAC86CF1A59735F00E0B8CF /* Memoires.swift */,
+				BDAC86D51A5974C500E0B8CF /* Save.swift */,
+				BDAC86D31A59747400E0B8CF /* Person.swift */,
+				BDAC86D11A59743E00E0B8CF /* Entry.swift */,
 			);
 			path = miniMoires;
 			sourceTree = "<group>";
@@ -215,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAC86D41A59747400E0B8CF /* Person.swift in Sources */,
+				BDAC86D21A59743E00E0B8CF /* Entry.swift in Sources */,
+				BDAC86D01A59735F00E0B8CF /* Memoires.swift in Sources */,
 				BDAC86B21A5972EE00E0B8CF /* DetailViewController.swift in Sources */,
 				BDAC86B01A5972EE00E0B8CF /* MasterViewController.swift in Sources */,
 				BDAC86AE1A5972EE00E0B8CF /* AppDelegate.swift in Sources */,
+				BDAC86D61A5974C500E0B8CF /* Save.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

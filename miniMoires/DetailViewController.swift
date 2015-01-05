@@ -10,21 +10,27 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet var detailDescriptionLabel: UILabel!
 
-
+    @IBOutlet var entryTextField: UITextView!
+    
+    
+    var memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
+    
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
-            self.configureView()
+            self.configureView(detailItem)
         }
     }
-
-    func configureView() {
+    
+    //hier even voor de nep een memoire definiëren
+    
+    func configureView(detailItem: AnyObject?) {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+            if let entry = self.entryTextField {
+                entry.text = memoires.getEntryText(Int(detail as NSNumber))
             }
         }
     }
@@ -32,7 +38,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
+        self.configureView(detailItem)
     }
 
     override func didReceiveMemoryWarning() {
