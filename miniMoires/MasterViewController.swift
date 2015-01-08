@@ -11,10 +11,10 @@ import UIKit
 class MasterViewController: UITableViewController {
 
 //    var objects = NSMutableArray()
-
-// hier even voor de nep een memoire definiëren
-    var memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
-
+    
+    // hier even voor de nep een memoire definiëren
+    let memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -33,12 +33,13 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-//    func insertNewObject(sender: AnyObject) {
-//        memoires.addEntry(Entry(year: 0000, text: ""))
-//        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-//        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-//    }
-
+    func insertNewObject(sender: AnyObject) {
+        let year = memoires.getFirstUnusedYear()
+        memoires.addEntry(Entry(year: year, text: ""))
+        let indexPath = NSIndexPath(forRow: find(memoires.listYears(), year)!, inSection: 0)
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    }
+    
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -62,7 +63,8 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel!.text = "\(memoires.listYears()[indexPath.row])"
+        println(memoires.listYears())
+        cell.textLabel!.text = String(memoires.listYears()[indexPath.row])
         return cell
     }
 
@@ -73,7 +75,7 @@ class MasterViewController: UITableViewController {
 
 //    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 //        if editingStyle == .Delete {
-//            objects.removeObjectAtIndex(indexPath.row)
+//            memoires.entries.removeObjectAtIndex(indexPath.row)
 //            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
 //        } else if editingStyle == .Insert {
 //            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

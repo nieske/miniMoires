@@ -19,14 +19,14 @@ class Memoires {
     func addEntry(entry: Entry) -> Void {
 //        if entry.year >= person.birthyear {
             entries[entry.year] = entry
+            println("added entry \(entry.year), total \(entries.count) entries")
 //        }
-            // else if entry already exists {
-            // tell user: this entry already exists. Do you want to edit?
-            // }
+//        else if entry already exists {
+//            display "This entry already exists. Do you want to edit?"
+//        }
 //        else {
-//            println("Are you sure? This is before you were born.")
-            // how to display this on the screen?
-            // also maybe option to override (e.g. year my parents met)
+//            display "Are you sure? This is before you were born."
+//            maybe option to override? (e.g. year my parents met)
 //        }
     }
     
@@ -48,11 +48,17 @@ class Memoires {
     }
     
     func listYears() -> [Int] {
-        return [Int](entries.keys)
+        var list = [Int](entries.keys)
+        return list.sorted { $0 < $1 }
     }
-
     
-//functie maken die entry met bepaalde index geeft
+    func getFirstUnusedYear() -> Int {
+        var year = person.birthyear
+        while getEntry(year) != nil {
+            ++year
+        }
+        return year
+    }
     
 }
 

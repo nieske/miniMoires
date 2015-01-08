@@ -14,8 +14,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet var entryTextField: UITextView!
     
-    
-    var memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
+    // hier even voor de nep een memoire definiëren
+    let memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
     
     var detailItem: AnyObject? {
         didSet {
@@ -23,8 +23,6 @@ class DetailViewController: UIViewController {
             self.configureView(detailItem)
         }
     }
-    
-    //hier even voor de nep een memoire definiëren
     
     func configureView(detailItem: AnyObject?) {
         // Update the user interface for the detail item.
