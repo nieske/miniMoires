@@ -60,6 +60,10 @@ class Memoires {
         return year
     }
     
+    func deleteEntry(year: Int) -> Void {
+        entries.removeValueForKey(year)
+    }
+    
 }
 
 

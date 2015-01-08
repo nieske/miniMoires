@@ -9,8 +9,6 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
-//    var objects = NSMutableArray()
     
     // hier even voor de nep een memoire definiëren
     let memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
@@ -73,15 +71,15 @@ class MasterViewController: UITableViewController {
         return true
     }
 
-//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        if editingStyle == .Delete {
-//            memoires.entries.removeObjectAtIndex(indexPath.row)
-//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-//        } else if editingStyle == .Insert {
-//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-//        }
-//    }
-
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let year = memoires.listYears()[indexPath.row]
+            memoires.deleteEntry(year)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
 
 }
 
