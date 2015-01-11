@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -74,19 +75,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-OZ-Rcr">
-                                <rect key="frame" x="26" y="86" width="535" height="428"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Entry text" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-OZ-Rcr">
+                                <rect key="frame" x="31" y="79" width="538" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a0L-h9-sNL" firstAttribute="top" secondItem="Vtj-OZ-Rcr" secondAttribute="bottom" constant="15" id="RIB-7E-NC7"/>
+                            <constraint firstItem="Vtj-OZ-Rcr" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leadingMargin" constant="15" id="cHZ-RR-FyM"/>
+                            <constraint firstItem="Vtj-OZ-Rcr" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="15" id="cen-cm-jeu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vtj-OZ-Rcr" secondAttribute="trailing" constant="15" id="hdJ-Oh-WGB"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Entry" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" title="Year" id="cra-N8-TIN"/>
                     <connections>
                         <outlet property="entryTextField" destination="Vtj-OZ-Rcr" id="bIp-wQ-K8s"/>
+                        <outlet property="headerLabel" destination="cra-N8-TIN" id="yFs-zq-aF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>

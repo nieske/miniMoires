@@ -13,29 +13,19 @@ class MasterViewController: UITableViewController {
     // hier even voor de nep een memoire definiëren
     let memoires = Memoires(person: Person(name: "nieske", birthyear: 1983))
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func insertNewObject(sender: AnyObject) {
         let year = memoires.getFirstUnusedYear()
         memoires.addEntry(Entry(year: year, text: ""))
         let indexPath = NSIndexPath(forRow: find(memoires.listYears(), year)!, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
     }
     
     // MARK: - Segues
@@ -43,8 +33,10 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = memoires.listYears()[indexPath.row]
-            (segue.destinationViewController as DetailViewController).detailItem = object
+                let year = memoires.listYears()[indexPath.row]
+                if let entry = memoires.getEntry(year) {
+                    (segue.destinationViewController as DetailViewController).detailItem = entry
+                }
             }
         }
     }
@@ -61,7 +53,6 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        println(memoires.listYears())
         cell.textLabel!.text = String(memoires.listYears()[indexPath.row])
         return cell
     }
@@ -76,10 +67,6 @@ class MasterViewController: UITableViewController {
             let year = memoires.listYears()[indexPath.row]
             memoires.deleteEntry(year)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
 }
-

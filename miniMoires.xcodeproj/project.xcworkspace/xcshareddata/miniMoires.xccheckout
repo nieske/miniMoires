@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>206D4213-D366-401C-9B36-E707DDD0D3F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>miniMoires</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEE93AC3771B7691E37C19168A19E807EC53DA2E</key>
+		<string>https://github.com/nieske/miniMoires.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>miniMoires.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEE93AC3771B7691E37C19168A19E807EC53DA2E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nieske/miniMoires.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEE93AC3771B7691E37C19168A19E807EC53DA2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEE93AC3771B7691E37C19168A19E807EC53DA2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>miniMoires</string>
+		</dict>
+	</array>
+</dict>
+</plist>
